@@ -7,7 +7,7 @@
 
   <body>	
     <div id="hello-world-app">
-      <h1>{{ msg }}</h1>
+      <h1>{{ message }}</h1>
     </div>
 
     <script
@@ -17,11 +17,9 @@
     <script>
       new Vue({
         el: "#hello-world-app",
-        data() {
-          return {
-            msg: "Hello World!"
-          }
-        }
+        data: {
+			message: 'Hello World!'
+		  }
       });
     </script>
   </body>
